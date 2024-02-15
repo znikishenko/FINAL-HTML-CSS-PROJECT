@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="header">
-      <div class="headerlogo">
-        <div class="headerlogo-svg">
+      <div class="header__logo">
+        <div class="header__logo-svg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="19"
             height="18"
             viewBox="0 0 19 18"
             fill="none"
-            class="headerlogo-element"
+            class="header__logo-element"
           >
             <path
               d="M9.5 0L18.535 6.56434L15.084 17.1857H3.91604L0.464963 6.56434L9.5 0Z"
@@ -30,59 +30,361 @@
             />
           </svg>
         </div>
-        <div class="headerlogo-txt">Logo</div>
+        <div class="header__logo-txt">CryptoEd</div>
       </div>
-      <nav class="headernav">
-        <a href="" class="navlink">About</a>
-        <a href="" class="navlink">Services</a>
-        <a href="" class="navlink">Pricing</a>
-        <a href="" class="navlink">Blog</a>
-        <a href="" class="navlink">Members</a>
+      <nav class="header__nav">
+        <a href="" class="nav__link">About</a>
+        <a href="" class="nav__link">Services</a>
+        <a href="" class="nav__link">Pricing</a>
+        <a href="" class="nav__link">Blog</a>
+        <a href="" class="nav__link">Members</a>
       </nav>
       <button class="header__button">CONTACT</button>
     </header>
+    <main class="main">
+      <div class="frame-1_I">
+        <div class="frame-1__left">
+          <p class="left__txt-1">Crypto Education</p>
+          <p class="left__title">
+            We’re Help<br />
+            To Build Your<br />Crypto Dreams
+          </p>
+          <p class="left__txt-2">
+            CyptoEd provides a full service range including technical
+            <br />skills, soft skills, business understanding.
+          </p>
+          <div class="left__group">
+            <button class="group__btn-1">How We Work</button
+            ><button class="group__btn-2">Contact Us</button>
+          </div>
+          <div class="left__box">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <circle cx="24" cy="24" r="24" fill="#B550F6" />
+              <mask
+                id="mask0_0_16"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="48"
+                height="48"
+              >
+                <circle cx="24" cy="24" r="24" fill="white" />
+              </mask>
+              <g mask="url(#mask0_0_16)">
+                <rect
+                  x="4"
+                  y="5"
+                  width="38"
+                  height="43"
+                  fill="url(#pattern0)"
+                />
+              </g>
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_0_16"
+                    transform="scale(0.0263158 0.0232558)"
+                  />
+                </pattern>
+                <image
+                  id="image0_0_16"
+                  width="38"
+                  height="43"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            <div class="box__section">
+              <div class="section__txt-1">
+                "Put themselves in the merchant's shoes"
+              </div>
+              <div class="section__txt-2">Meta Inc.</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-1__right">
+          <img src="./imgs/pig.png" alt="" class="pig" />
+          <img src="./imgs/parce.png" alt="" class="parce" />
+        </div>
+      </div>
+    </main>
+    <main class="main-2">
+      <div class="frame-2_I">
+        <div class="frame-2__box">
+          <div class="frame-2__box-left">
+            <p class="box-left__txt-1">Features</p>
+            <p class="box-left__title">Give Your Site <br />A New Look</p>
+            <p class="box-left__txt-2">
+              Service range including technical skills, soft skills, <br />
+              business understanding.
+            </p>
+            <div class="box-left__group">
+              <div class="group__row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <circle cx="16" cy="16" r="16" fill="#EF6C57" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1178 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9668 18.1236 14.5 23C12.5118 20.2129 10.3398 17.6189 7 14.9206Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Range including technical skills</p>
+              </div>
+              <div class="group__row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <circle cx="16" cy="16" r="16" fill="#EF6C57" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1178 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9668 18.1236 14.5 23C12.5118 20.2129 10.3398 17.6189 7 14.9206Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Business understanding</p>
+              </div>
+              <div class="group__row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <circle cx="16" cy="16" r="16" fill="#EF6C57" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1178 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9668 18.1236 14.5 23C12.5118 20.2129 10.3398 17.6189 7 14.9206Z"
+                    fill="white"
+                  />
+                </svg>
+                <p>Partner on the long run</p>
+              </div>
+            </div>
+          </div>
+          <div class="frame-2__box-right">
+            <img src="./imgs/picc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="Y__powered-on">
+        <img
+          src="./img/47c46679-972b-43df-b995-1a962e7bc8d1-1594159154049 1.png"
+          alt=""
+          class="powered-on__img"
+        />
+        <img src="./img/reuters-logo 1.png" alt="" class="powered-on__img" />
+        <img src="./img/Group 1347.png" alt="" class="powered-on__img" />
+        <img src="./img/Group 1348.png" alt="" class="powered-on__img" />
+      </div>
 
-    <div class="Y__powered-on">
-      <img src="./img/47c46679-972b-43df-b995-1a962e7bc8d1-1594159154049 1.png" alt="" class="powered-on__img">
-      <img src="./img/reuters-logo 1.png" alt="" class="powered-on__img">
-      <img src="./img/Group 1347.png" alt="" class="powered-on__img">
-      <img src="./img/Group 1348.png" alt="" class="powered-on__img">
-    </div>
+      <div class="body__line"></div>
 
-    <div class="body__line"></div>
-
-
-    <div class="Y__container-1">
-      
+      <div class="Y__container-1">
         <div class="Y__container-1__left">
-          <img class="Y__container-1__left-img" src="./img/pngwing.com (21).png" alt="">
-          <img class="Y__container-1__left-img2" src="./img/pngwing.com (22).png" alt="">
+          <img
+            class="Y__container-1__left-img"
+            src="./img/pngwing.com (21).png"
+            alt=""
+          />
+          <img
+            class="Y__container-1__left-img2"
+            src="./imgs/pngwing.com (22).png"
+            alt=""
+          />
         </div>
-      
-        <div class="container-1__right">
-            <span class="right__about">ABOUT</span>
-            <h2 class="right__logo">An Experience 
-                Design Agency</h2>
-            <h4 class="right__coLogo">Provides a full service range</h4>
-            <span class="right__txt">Ability to put themselves in the merchant's shoes.
-                It is meant to partner on the long run, and work as an extension of the merchant's team.</span>
-            <button class="right__btn">About us</button>
-        </div>
-    </div>
 
-    <div class="Y__container-2">
-      <div class="Y__section-2">
-        <span class="section-2__logo">42%</span>
-        <span class="section-2__txt">Years od experience</span>
+        <div class="container-1__right">
+          <span class="right__about">ABOUT</span>
+          <h2 class="right__logo">An Experience Design Agency</h2>
+          <h4 class="right__coLogo">Provides a full service range</h4>
+          <span class="right__txt"
+            >Ability to put themselves in the merchant's shoes. It is meant to
+            partner on the long run, and work as an extension of the merchant's
+            team.</span
+          >
+          <button class="right__btn"><a href="./zhenya/index.html">About us!</a></button>
+        </div>
       </div>
-      <div class="Y__section-2">
-        <span class="section-2__logo">73+</span>
-        <span class="section-2__txt">Agency members</span>
+
+      <div class="Y__container-2">
+        <div class="Y__section-2">
+          <span class="section-2__logo">42%</span>
+          <span class="section-2__txt">Years od experience</span>
+        </div>
+        <div class="Y__section-2">
+          <span class="section-2__logo">73+</span>
+          <span class="section-2__txt">Agency members</span>
+        </div>
+        <div class="Y__section-2">
+          <span class="section-2__logo">5.000</span>
+          <span class="section-2__txt">Projects complete</span>
+        </div>
       </div>
-      <div class="Y__section-2">
-        <span class="section-2__logo">5.000</span>
-        <span class="section-2__txt">Projects complete</span>
+
+      <div class="info-1">
+        <div class="info-1__left">
+          <img class="left__img" src="./imgs/asdasd.png" alt="" />
+        </div>
+
+        <div class="info-1__right">
+          <h1 class="right__title">Service</h1>
+          <p class="right__info">Making Complex Digital Products</p>
+          <p class="right__info-2">
+            Agency provides a full service range including technical skills,
+            design, business.
+          </p>
+          <div class="right__box">
+            <img class="box__img" src="./imgs/123123.png" alt="" />
+            <p class="box__speech">
+              "Understanding, ability to put themselves in the <br />
+              merchant's shoes. It is meant to partner."
+            </p>
+          </div>
+          <h2 class="right__name">Jenny Murtaugh</h2>
+          <button class="right__button">explore</button>
+        </div>
       </div>
+
+      <div class="block-2">
+        <h2 class="block-2__title">service</h2>
+        <p class="block-2__info">How Our Agency Can Help</p>
+
+        <div class="block-2__box">
+          <div class="box__inside">
+            <img class="inside__img" src="" alt="" />
+            <h2 class="inside__title">Design</h2>
+            <p class="inside__info">
+              Agency provides a full service range including technical skills,
+              design.
+            </p>
+            <button class="inside__button">Learn More</button>
+          </div>
+
+          <div class="box__inside">
+            <img class="inside__img" src="" alt="" />
+            <h2 class="inside__title">Development</h2>
+            <p class="inside__info">
+              Full service range including technical skills, design, business.
+            </p>
+            <button class="inside__button">Discover More</button>
+          </div>
+
+          <div class="box__inside">
+            <img class="inside__img" src="" alt="" />
+            <h2 class="inside__title">Marketing</h2>
+            <p class="inside__info">
+              Technical skills, design, business understanding, ability.
+            </p>
+            <button class="inside__button">Explore Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="info__1">
+        <div>
+          <p class="info__1-OUR">OUR BLOG</p>
+          <h2 class="info__1-Latest">
+            Latest Blog <br />
+            Articles
+          </h2>
+        </div>
+        <div class="button-info__1">
+          <button>DISCOVER ALL</button>
+        </div>
+        <div class="info__2">
+          <div class="card-1" style="width: 18rem">
+            <img src="./imgs/Bitmap.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Stories</h5>
+              <p class="card-text">
+                Agency is a business you hire to outsourse
+              </p>
+              <p class="card__info-1">5 Nov, 2021</p>
+            </div>
+          </div>
+          <div class="card-2" style="width: 18rem">
+            <img src="./imgs/Bitmap (1).png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Design</h5>
+              <p class="card-text">Outsource your digit</p>
+              <p class="card__info-2">29 Oct, 2021</p>
+            </div>
+          </div>
+          <div class="card-3" style="width: 18rem">
+            <img src="./imgs/Bitmap (2).png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Marketing</h5>
+              <p class="card-text">Your business with a</p>
+              <p class="card__info-3">21 Oct, 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="box-footer">
+      <h4 class="footer__logo">CryptoEd</h4>
+
+      <div class="footer__menu">
+        <span class="f__menu__logo">MENU</span>
+        <div class="f__menu__box">
+          <a href="" class="footer__box__link">About</a>
+          <a href="" class="footer__box__link">Services</a>
+          <a href="" class="footer__box__link">Blog</a>
+          <a href="" class="footer__box__link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer__menu">
+        <span class="f__menu__logo">MENU</span>
+        <div class="f__menu__box">
+          <a href="" class="footer__box__link">About</a>
+          <a href="" class="footer__box__link">Services</a>
+          <a href="" class="footer__box__link">Blog</a>
+          <a href="" class="footer__box__link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" fill="none">
+          <circle cx="136" cy="24" r="24" fill="#EF6D58"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M136 16C133.827 16 133.556 16.0093 132.701 16.0493C129.795 16.1827 128.181 17.7947 128.048 20.7013C128.009 21.556 128 21.828 128 24C128 26.1733 128.009 26.4453 128.048 27.2987C128.181 30.204 129.795 31.8187 132.701 31.952C133.556 31.9907 133.827 32 136 32C138.173 32 138.445 31.9907 139.3 31.952C142.201 31.8187 143.821 30.2067 143.952 27.2987C143.991 26.4453 144 26.1733 144 24C144 21.828 143.991 21.556 143.952 20.7013C143.821 17.7987 142.207 16.1813 139.3 16.0493C138.445 16.0093 138.173 16 136 16ZM136 17.4427C138.136 17.4427 138.389 17.4507 139.233 17.4893C141.403 17.588 142.413 18.616 142.513 20.768C142.551 21.612 142.559 21.864 142.559 24C142.559 26.136 142.551 26.3893 142.513 27.232C142.413 29.3827 141.404 30.4133 139.233 30.512C138.389 30.5493 138.137 30.5587 136 30.5587C133.864 30.5587 133.611 30.5507 132.768 30.512C130.595 30.412 129.588 29.38 129.488 27.232C129.451 26.3893 129.441 26.136 129.441 24C129.441 21.864 129.451 21.6107 129.488 20.768C129.587 18.6147 130.597 17.5867 132.768 17.488C133.611 17.4493 133.864 17.4427 136 17.4427ZM131.892 24C131.892 21.7307 133.732 19.892 136 19.892C138.268 19.892 140.108 21.732 140.108 24C140.108 26.2693 138.268 28.108 136 28.108C133.732 28.108 131.892 26.2693 131.892 24ZM136 26.6667C134.527 26.6667 133.333 25.4733 133.333 24C133.333 22.528 134.527 21.3333 136 21.3333C137.472 21.3333 138.668 22.5267 138.668 24C138.668 25.4733 137.472 26.6667 136 26.6667ZM139.309 19.7307C139.309 19.2 139.74 18.7707 140.269 18.7707C140.801 18.7707 141.231 19.2 141.231 19.7307C141.231 20.2613 140.8 20.6907 140.269 20.6907C139.739 20.6907 139.309 20.26 139.309 19.7307Z" fill="white"/>
+          <circle cx="80" cy="24" r="24" fill="#EF6D58"/>
+          <path d="M88 19.54C87.412 19.8013 86.7787 19.9773 86.1147 20.0573C86.7933 19.6507 87.312 19.008 87.5587 18.2413C86.924 18.6173 86.2213 18.8907 85.4733 19.0373C84.876 18.3987 84.0213 18 83.0787 18C80.9587 18 79.4013 19.9773 79.88 22.0307C77.1533 21.8933 74.7333 20.5867 73.1147 18.6013C72.2547 20.076 72.6693 22.0067 74.1307 22.984C73.5933 22.9667 73.088 22.8187 72.6453 22.5733C72.6093 24.0933 73.7 25.516 75.2787 25.8333C74.8173 25.9587 74.3107 25.988 73.796 25.8893C74.2133 27.1933 75.428 28.1413 76.8627 28.168C75.48 29.2507 73.7427 29.7347 72 29.5293C73.4533 30.4613 75.1773 31.004 77.0307 31.004C83.1267 31.004 86.5693 25.856 86.3613 21.2387C87.004 20.7773 87.56 20.1987 88 19.54Z" fill="white"/>
+          <circle cx="24" cy="24" r="24" fill="#EF6D58"/>
+          <path d="M21.6667 21.3333H19V24H21.6667V32H25.6667V24H28.0933L28.3333 21.3333H25.6667V20.2227C25.6667 19.5853 25.7947 19.3333 26.4107 19.3333H28.3333V16H25.128C22.7307 16 21.6667 17.056 21.6667 19.0773V21.3333Z" fill="white"/>
+        </svg>
+      </div>
+
     </div>
+    </footer>
   </body>
 </html>
