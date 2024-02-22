@@ -108,10 +108,30 @@
     font-family: 'Just Another Hand', cursive;
     display: flex;
     flex-direction: column;
-    
+    position: relative;
     height: 80vh;
     border: 1px solid #000;
     
+  }
+
+  .block-1__confetti{
+    position: absolute;
+    animation: confetti 2s linear infinite alternate;
+    z-index: -2;
+  }
+
+  .block-1:nth-child(5){
+    right: 0;
+  }
+
+  @keyframes confetti{
+    0%{
+      transform: rotate(-15deg);
+    }
+
+    100%{
+      transform: rotate(15deg);
+    }
   }
   .block-1__title {
     font: 18rem 'Handlee', cursive;
@@ -120,6 +140,7 @@
     animation: fadeIn 3s ease-out forwards;
     
   }
+
 
   @keyframes fadeIn {
     from {
@@ -134,8 +155,8 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 530px;
-    right: 50px;
+    top: 370px;
+    right: 80px;
     font-family: 'Roboto', sans-serif;
     animation: slideIn 2s ease-out forwards;
   }
@@ -250,6 +271,15 @@
     border: 1px solid #000;
     margin: 100px auto;
   }
+
+  .column{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--aktiven);
+  }
   .block-3__header {
     font-family: var(--font-family);
     font-weight: 500;
@@ -270,12 +300,7 @@
   .block-3__main-column {
   }
   .column__header {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    text-align: center;
-    color: var(--aktiven);
+
   }
   .column {
     display: flex;
@@ -447,9 +472,61 @@
   border-radius: 50%;
   width: 300px;
   display: block;
-  
-
 }
 
+@media (max-width: 1300px){
+  .block-1{
+    align-items: center;
 
 
+  }
+  
+  .block-1__title{
+    font-size: 15rem;
+  }
+  .block-1__txt{
+    display: none;
+  }
+  .block-1__skater{
+    bottom: 0;
+    right: 320px;
+  }
+
+  .block-2__img{
+    width: 350px;
+  }
+  .block-2__gift{
+    width: 350px;
+    bottom: 0;
+    right: 20px;
+  }
+
+  .block-4__backgorund-title{
+    font-size: 290px;
+  }
+  .block-4__right-img{
+    width: 600px;
+  }
+}
+@media (max-width: 1199px){
+  .block-4__backgorund-title{
+    font-size: 250px;
+  }
+}
+@media (max-width: 991px){
+  .block-4{
+    flex-direction: column-reverse;
+    
+  }
+  .block-4__left{
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .block-4__backgorund-title{
+    font-size: 200px;
+  }
+}
+@media (max-width: 767px){}
+@media (max-width: 575px){}
